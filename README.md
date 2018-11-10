@@ -42,4 +42,4 @@ or
     <script src="node_modules/html-components/distrib/html-components.min.js"></script>
 
 
-<a href="https://sylvain59650.github.io/html-components/">API & Demo</a>
+<a href="https://sylvain59650.github.io/html-components/index.html">API & Demo</a>
