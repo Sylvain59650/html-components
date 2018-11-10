@@ -1,18 +1,5 @@
-<html>
+# html-components
 
-<head>
-  <title>html-components</title>
-  <link href="https://sylvain59650.github.io/demonstrator/css/theme1.css" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="breadcrumb">
-    <a href="https://www.npmjs.com/package/html-components" title="NPM">
-      <img src="img/npm.png" height="32"></a>
-    <a href="https://github.com/Sylvain59650/html-components" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
-  </div>
-
-  <h1>html-components</h1>
 
   <div style="display:inline">
     <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/html-components"><img src="https://travis-ci.org/Sylvain59650/html-components.png?branch=master" /></a>
@@ -22,20 +9,37 @@
     <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/html-components"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
     <img src="https://img.shields.io/bundlephobia/min/html-components.svg" />
     <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
-    <a href="https://codeclimate.com/github/Sylvain59650/html-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a5fe2dbf9814c520e21/maintainability" /></a>
+ <a href="https://codeclimate.com/github/Sylvain59650/html-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a5fe2dbf9814c520e21/maintainability" /></a>
     <a target="_blank" title="tests" href="https://sylvain59650.github.io/html-components/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
-    <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/html-components"><img src="https://data.jsdelivr.com/v1/package/npm/html-components/badge" /></a>
-    <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/html-components/distrib/html-components.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
     <img src="https://img.shields.io/npm/l/html-components.svg" />
     <img src="https://hits.dwyl.com/Sylvain59650/html-components.svg" />
   </div>
 
-  <nav>
-    <ul>
-      <li><a href="api/index.html">API</a></li>
-      <li><a href="demo/index.html">Demo</a></li>
-    </ul>
-  </nav>
-</body>
+ <div class="Note" style="color:orange;font-style:italic">
+ 
+  The lastest version of this document is available on [Github > html-components](https://github.com/Sylvain59650/html-components/blob/master/README.md)
+</div>
 
-</html>
+## Introduction
+
+### few components
+- BackToTop
+- Select
+- Modal
+- MaskInput
+  
+## Installation
+
+    npm install html-components --save
+
+or
+
+    yarn add html-components --save
+
+
+## prerequisites for browser
+
+    <script src="node_modules/html-components/distrib/html-components.min.js"></script>
+
+
+<a href="https://sylvain59650.github.io/html-components/">API & Demo</a>
