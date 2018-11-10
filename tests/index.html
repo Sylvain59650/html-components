@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <script src="../src/maskInput.js"></script>
+</head>
+
+<body>
+  <input type="text" id="phone" />
+
+  <input id="phone2" type="tel" name="phone" />
+
+  <script>
+    new MaskedInput({
+      elm: document.getElementById('phone'),
+      format: '+375 (__) ___-__-__',
+      separator: '+375 ()-'
+    });
+
+    new MaskedInput({
+      elm: document.getElementById('phone2'),
+      format: '+33 _ __ __ __ __',
+      separator: '+33 ()'
+    });
+  </script>
+
+</body>
+
+</html>

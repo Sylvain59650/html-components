@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="../3parts/iziToast.min.css?v=130c">
+  <script src="../3parts/iziToast.min.js?v=130c" type="text/javascript"></script>
+
+  <script src="modules/clipboard-interaction/distrib/clipboard-interaction.min.js"></script>
+</head>
+
+<body>
+  <div class="breadcrumb">
+    <a href="https://www.npmjs.com/package/clipboard-interaction" title="NPM">
+      <img src="../img/npm.png" height="32"></a>
+    <a href="https://github.com/Sylvain59650/clipboard-interaction" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
+  </div>
+
+  <h1>clipboard-interaction</h1>
+
+  <script>
+    function trace(msg) {
+      iziToast.success({
+        title: "",
+        message: msg,
+        timeout: 1500,
+        backgrouncColor: "green"
+      });
+    }
+
+    function error(msg) {
+      iziToast.error({
+        title: "Error",
+        message: msg,
+        timeout: 2500,
+        backgrouncColor: "red"
+      });
+    }
+
+    function copy() {
+      var source = document.getElementById("source");
+      var target = document.getElementById("target");
+      Clipboard.copy(source.value, function() {
+          target.value = "";
+          target.focus();
+          trace("copied !");
+        },
+        function(err, msg) {
+          error(err.message);
+        });
+    }
+  </script>
+  <input id="source" type="text" placeholder="write something here" />
+  <button onclick="copy()">Copy to clipboard</button>
+
+  <input id="target" type="text" placeholder="Ctrl+V to paste from clipboard" />
+</body>
+
+</html>

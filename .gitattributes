@@ -1,0 +1,4 @@
+sources/scss/* linguist-vendored=true
+distrib/css/* linguist-vendored=true
+distrib/fa/*  linguist-vendored=true
+docs/*  linguist-vendored=true

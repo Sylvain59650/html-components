@@ -1,0 +1,46 @@
+{
+  "name": "html-components",
+  "version": "0.5.0",
+  "description": "few components",
+  "main": "distrib/html-components.core.min.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvain59650/html-components.git"
+  },
+  "keywords": [
+    "html components","backToTop","select","dropdown","modal","maskInput","front-end"
+  ],
+  "author": "sylvain59",
+  "maintainers": [
+    {
+      "name": "sylvain59",
+      "email": "slongepee@laposte.net"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "isnotnull": "^0.8.0",
+    "htmlelement-events-extension": "^0.9.10",
+    "htmlelement-extension": "^0.8.13"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-minify-mangle-names": "^0.4.3",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-plugin-rename-umd-globals": "^1.0.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Sylvain59650/html-components/issues"
+  },
+  "homepage": "https://github.com/Sylvain59650/html-components#readme"
+}

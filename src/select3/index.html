@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="select3.css" />
+  <script src="../../docs/demo/htmlelement.min.js"></script>
+  <script src="../../docs/demo/htmlelement-events.min.js"></script>
+  <script src="../../distrib/select3.min.js"></script>
+</head>
+
+<body>
+  <style>
+    .container {
+      margin-top: 100px;
+      margin-right: 100px;
+    }
+  </style>
+  <div class="container">
+    <div id="select-box" class="select-box-values">
+      <div>
+        <div class="select-box-selected">
+        </div>
+        <div class="cleaner">&#9747;</div>
+      </div>
+      <div class="select-box-items">
+        <div class="select-box-value" val="1">one</div>
+        <div class="select-box-value" val="2">two</div>
+        <div class="select-box-value" val="3">three</div>
+        <div class="select-box-value" val="4">four</div>
+        <div class="select-box-value" val="5">five</div>
+        <div class="select-box-value" val="6">six</div>
+      </div>
+    </div>
+
+    <div id="select-values">
+      <div class="select-value">
+        <span>1</span>
+        <div class="select-discard"></div>
+      </div>
+      <div class="select-value">
+        <span>2</span>
+        <div class="select-discard"></div>
+      </div>
+      <div class="select-value">
+        <span>3</span>
+        <div class="select-discard"></div>
+      </div>
+    </div>
+
+
+    <select id="s2" size="1"><option>1</option><option>2</option><option>3</option></select>
+
+    <select id="s3" size="4" multiple><option>1</option><option>2</option><option>3</option></select>
+
+    <div id="select-box2" class="select-box-values"></div>
+
+    <button id="b">Ok</button>
+  </div>
+  <script>
+    qsa(".select-discard").on("click", function() {
+      this.parent().remove();
+    });
+
+    qsa(".select-box-value").on("click", function() {
+      this.toggleClass("select-box-value-active");
+      if (this.hasClass("select-box-value-active")) {
+        qs(".select-box-selected").innerText = this.text();
+      }
+    });
+
+    qs(".select-box-selected").on("click", function() {
+      this.toggleClass("up");
+      qs(".select-box-items").toggleVisible();
+    });
+
+
+    qsi("b").on("click", function() {
+      alert(select.val());
+    });
+
+
+    var config = {
+      containerId: "select-box2",
+      placeholder: "Sélectionnez",
+      closeOnSelect: false,
+      allowClear: true,
+      disabled: false,
+      withSearch: true,
+      maximumSelectionLength: 2,
+      size: 10,
+      data: [{
+        value: 1,
+        label: "one",
+        locked: true
+      }, {
+        value: 2,
+        label: "two",
+        disabled: true
+      }, {
+        value: 3,
+        label: "three"
+      }, {
+        value: 4,
+        label: "four",
+        optgroup: true
+      }, {
+        value: 5,
+        label: "five",
+        selected: true
+      }, {
+        value: 6,
+        label: "six",
+        selected: true
+      }, {
+        value: 7,
+        label: "seven"
+      }, {
+        value: 8,
+        label: "height"
+      }, {
+        value: 9,
+        label: "nine"
+      }, {
+        value: 10,
+        label: "ten"
+      }, {
+        value: 11,
+        label: "eleven"
+      }, {
+        value: 12,
+        label: "tweille"
+      }, {
+        value: 13,
+        label: "thirdteen"
+      }]
+    };
+    var select = new htmlex.Select3(config);
+  </script>
+</body>
+
+</html>

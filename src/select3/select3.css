@@ -1,0 +1,136 @@
+.select-values {
+  display: inline-block;
+}
+
+.select-value {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: red;
+  border-radius: 5px 5px 5px 5px;
+  min-width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 25px;
+  padding-top: 2px;
+}
+
+.select-discard {
+  display: inline-block;
+  background-color: blue;
+  min-width: 16px;
+  min-height: 16px;
+  background: url(./cross.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.cleaner {
+  min-width: 10px;
+  min-height: 10px;
+  /* float: right; */
+  margin: 0;
+  /* margin-right: 14px; */
+  top: -22px;
+  left: 0px;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.cleaner:before {
+  content: "";
+}
+
+.select-box-values {
+  display: inline-block;
+  border-radius: 0px 0px 8px 8px;
+  border: solid 1px blue;
+}
+
+.select-box-values:focus {
+  border-width: solid 2px blue;
+}
+
+.select-box-values>select-box-value:active {
+  border: solid 2px blue;
+}
+
+.select-box-title {
+  color: black;
+  font-weight: bolder;
+  background-color: #F2F2F2;
+}
+
+.select-disabled {
+  background-color: #d0d2de !important;
+  cursor: not-allowed !important;
+}
+
+.select-box-disabled {
+  color: gray !important;
+  cursor: not-allowed !important;
+}
+
+.select-box-disabled:hover {
+  color: gray !important;
+  background-color: white !important;
+}
+
+.select-box-items {
+  margin: 0;
+  padding: 0;
+  max-height: 850px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 5px;
+}
+
+.select-box-value,
+.select-box-selected {
+  display: block;
+  min-width: 100px;
+  background-color: white;
+  color: black;
+  max-width: 200px;
+  min-height: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.select-box-selected:empty {
+  background-color: red
+}
+
+.select-box-selected {
+  overflow-x: hidden
+}
+
+.select-box-value {
+  text-align: left;
+}
+
+.select-box-value:hover {
+  background-color: #2571d7;
+  color: white;
+}
+
+.select-box-value-active {
+  background-color: #0f32e1;
+  color: white;
+}
+
+.select-box-selected:after {
+  content: "▼";
+}
+
+.select-box-selected-up:after {
+  content: "▲";
+}
+
+.select-novalue {
+  color: gray;
+}
